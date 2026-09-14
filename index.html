@@ -1,427 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Reddy Anna - Sports UI Demo</title>
+    <title>Reddy Anna Sports Entertainment</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- HEADER -->
+<header class="header">
 
-    <header class="header">
-
-        <div class="menu" onclick="toggleMenu()">☰</div>
-
-        <div class="logo">
-            <span>REDDY</span>
-            <small>ANN</small>
-        </div>
-
-        <div class="header-buttons">
-            <button onclick="showMessage('Login demo')">
-                Login
-            </button>
-
-            <button onclick="showMessage('Register demo')">
-                Register
-            </button>
-        </div>
-
-    </header>
-
-
-    <!-- ================= SIDE MENU ================= -->
-
-    <div id="sideMenu" class="side-menu">
-
-        <div class="close" onclick="toggleMenu()">×</div>
-
-        <h3>Menu</h3>
-
-        <p onclick="closeMenu()">Home</p>
-        <p onclick="closeMenu()">Sports</p>
-        <p onclick="closeMenu()">Cricket</p>
-        <p onclick="closeMenu()">Football</p>
-        <p onclick="closeMenu()">Tennis</p>
-        <p onclick="closeMenu()">Casino Games</p>
-
+    <div class="logo">
+        <img src="assets/my-logo.png" alt="My Logo">
     </div>
 
 
-    <!-- ================= MAIN ================= -->
 
-    <main>
 
-        <!-- SPORTS -->
+    
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#games">Games</a>
+        <a href="#sports">Sports</a>
+        <a href="#partners">Partners</a>
+        <a href="#support">Help/Support</a>
+    </nav>
 
-        <section class="sports-grid">
+    <button class="get-id" onclick="showMessage()">
+        Explore Now
+    </button>
 
-            <div class="sport cricket">
-                <span>Cricket</span>
-                <div>🏏 🏏</div>
-            </div>
+</header>
 
-            <div class="sport football">
-                <span>Football</span>
-                <div>⚽ ⚽</div>
-            </div>
 
-            <div class="sport tennis">
-                <span>Tennis</span>
-                <div>🎾 🎾</div>
-            </div>
+<div class="main-container">
 
-            <div class="sport horse">
-                <span>Horse Racing</span>
-                <div>🐎</div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="#live">Live Sports</a>
+        <a href="#kabaddi">Kabaddi</a>
+        <a href="#cricket">Cricket</a>
+        <a href="#football">Football</a>
+        <a href="#tennis">Tennis</a>
+        <a href="#horse">Horse Racing</a>
+        <a href="#greyhound">Greyhound Racing</a>
+        <a href="#cards">Indian Card Games</a>
+        <a href="#sportsbook">Sportsbook</a>
+        <a href="#casino">Live Games</a>
+        <a href="#binary">Strategy Games</a>
+        <a href="#slots">Puzzle Games</a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- TOP GAME SECTION -->
+        <section class="game-section" id="games">
+
+            <h2 class="top-title">
+                Play Games & Aviator Games
+            </h2>
+
+            <div class="game-grid">
+
+                <div class="top-game-card">
+                    <img src="images/jili.jpg">
+                    <div class="game-name">Jili Games</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/ezugi.jpg">
+                    <div class="game-name">Ezugi</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/superspade.jpg">
+                    <div class="game-name">Super Spade</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/table-games.jpg">
+                    <div class="game-name">Table Games</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/virtual.jpg">
+                    <div class="game-name">Virtual Sports</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/bingo.jpg">
+                    <div class="game-name">Bingo Games</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/fishing.jpg">
+                    <div class="game-name">Fishing Games</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/bet-games.jpg">
+                    <div class="game-name">Bet Games</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/casino-lobby.jpg">
+                    <div class="game-name">Game Lobby</div>
+                </div>
+
+                <div class="top-game-card">
+                    <img src="images/live-games.jpg">
+                    <div class="game-name">Live Games</div>
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- LARGE CATEGORY CARDS -->
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
 
-        <div class="large-card ecricket">
+            <div class="hero-content">
 
-            <div class="card-icon">🏏</div>
-
-            <strong>E - Cricket</strong>
-
-            <div class="card-image">🏏</div>
-
-        </div>
-
-
-        <div class="large-card evolution">
-
-            <div class="card-icon">◕</div>
-
-            <strong>Evolution</strong>
-
-            <div class="card-image">🃏</div>
-
-        </div>
-
-
-        <div class="large-card aviator">
-
-            <div class="card-icon">🚀</div>
-
-            <strong>Aviator</strong>
-
-            <div class="multiplier">100X</div>
-
-        </div>
-
-
-        <div class="large-card sportsbook">
-
-            <div class="card-icon">🏆</div>
-
-            <strong>Sportsbook</strong>
-
-            <div class="stadium">🏟️</div>
-
-        </div>
-
-
-        <!-- ================= CRICKET ================= -->
-
-        <section class="section-title">
-
-            <div class="ball">🏏</div>
-
-            <h2>Cricket</h2>
-
-        </section>
-
-
-        <div class="match-card">
-
-            <h3>
-                RC Bengaluru v Kolkata Knight Riders
-            </h3>
-
-            <p>
-                Indian Premier League
-            </p>
-
-            <div class="match-info">
-
-                <span class="live">
-                    <i></i>
-                    LIVE
-                </span>
-
-                <span class="date">
-                    09/12/2026 6:13 pm
-                </span>
-
-            </div>
-
-            <button class="demo-button" onclick="showMessage('Demo only')">
-                Demo
-            </button>
-
-        </div>
-
-
-        <!-- ================= GAMES ================= -->
-
-        <h3 class="sub-title">
-            Games
-        </h3>
-
-
-        <section class="games-grid">
-
-            <div class="game-card">
-                <div class="game-icon">7️⃣</div>
-                <p>Teen Patti</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🃏</div>
-                <p>Teen Patti</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🎰</div>
-                <p>Roulette</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🃏</div>
-                <p>Andar Bahar</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">👑</div>
-                <p>War</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">⬆️⬇️</div>
-                <p>High Low</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🃏</div>
-                <p>2 Cards Teenpatti</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🎴</div>
-                <p>Teenpatti T20</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">🃏</div>
-                <p>20-20 Poker</p>
-            </div>
-
-            <div class="game-card">
-                <div class="game-icon">💰</div>
-                <p>Muflis Teenpatti</p>
-            </div>
-
-        </section>
-
-
-        <!-- ================= INTERNATIONAL CASINO ================= -->
-
-        <h3 class="sub-title">
-            International Casino Games
-        </h3>
-
-
-        <section class="casino-grid">
-
-            <div>
-                🎰
-                <span>Casino</span>
-            </div>
-
-            <div>
-                🎲
-                <span>Live Casino</span>
-            </div>
-
-            <div>
-                ⚽
-                <span>Super Sports</span>
-            </div>
-
-            <div>
-                🎮
-                <span>Table Games</span>
-            </div>
-
-            <div>
-                🎯
-                <span>Bingo Games</span>
-            </div>
-
-            <div>
-                🎣
-                <span>Fishing Games</span>
-            </div>
-
-            <div>
-                🃏
-                <span>Bet Games</span>
-            </div>
-
-            <div>
-                🎰
-                <span>Classic Lobby</span>
-            </div>
-
-        </section>
-
-
-        <!-- ================= LEARN ABOUT US ================= -->
-
-        <section class="about-section">
-
-            <div class="about-heading">
-                <span>ABOUT US</span>
-                <h2>Learn About Us</h2>
-            </div>
-
-
-            <div class="about-content">
+                <h1>
+                    Reddy Anna Sports Entertainment Platform
+                </h1>
 
                 <p>
-                    Welcome to our sports and entertainment platform.
-                    We provide a simple and user-friendly interface where
-                    visitors can explore different sports categories,
-                    match information and entertainment sections.
+                    Welcome to Reddy Anna Sports Entertainment. Explore sports,
+                    interactive games and entertainment content all in one place.
+                    Enjoy a modern, user-friendly experience across devices.
                 </p>
 
                 <p>
-                    Our platform is designed with a focus on easy
-                    navigation, responsive design and a smooth browsing
-                    experience across mobile phones, tablets and desktops.
+                    Discover cricket, football, tennis and various entertainment
+                    categories with an easy-to-use interface.
                 </p>
 
-                <p>
-                    Explore cricket, football, tennis and other sections
-                    using the navigation available on the website.
-                </p>
+                <h3>
+                    Explore Sports & Entertainment
+                </h3>
+
+                <button class="hero-btn" onclick="exploreGames()">
+                    Explore Now
+                </button>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="images/hero.jpg" alt="Sports Entertainment">
 
             </div>
 
         </section>
+
+
+        <!-- SPORTS CATEGORY -->
+        <section class="section" id="sports">
+
+            <h2 class="section-title">
+                Sports Categories
+            </h2>
+
+            <div class="sports-row">
+
+                <div class="sport cricket">
+                    Cricket
+                </div>
+
+                <div class="sport football">
+                    Football
+                </div>
+
+                <div class="sport tennis">
+                    Tennis
+                </div>
+
+                <div class="sport horse">
+                    Horse Racing
+                </div>
+
+                <div class="sport greyhound">
+                    Greyhound Racing
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WIDE CARDS -->
+        <section class="wide-cards">
+
+            <div class="wide-card e-cricket">
+                <h2>E-Cricket</h2>
+                <p>Interactive cricket entertainment</p>
+            </div>
+
+            <div class="wide-card evolution">
+                <h2>Evolution Games</h2>
+                <p>Modern entertainment experiences</p>
+            </div>
+
+            <div class="wide-card aviator">
+                <h2>Aviator Games</h2>
+                <p>Explore interactive gaming</p>
+            </div>
+
+            <div class="wide-card sportsbook">
+                <h2>Sports Arena</h2>
+                <p>All major sports categories</p>
+            </div>
+
+        </section>
+
+
+        <!-- LIVE GAMES -->
+        <section class="section" id="casino">
+
+            <h2 class="section-title">
+                Live Games & Entertainment
+            </h2>
+
+            <div class="image-grid">
+
+                <div class="game-card">
+                    <img src="images/game1.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game2.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game3.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game4.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game5.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game6.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game7.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game8.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARD GAMES -->
+        <section class="section" id="cards">
+
+            <h2 class="section-title">
+                Indian Card Games
+            </h2>
+
+            <div class="image-grid">
+
+                <div class="game-card">
+                    <img src="images/card1.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/card2.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/card3.jpg">
+                </div>
+
+                <div class="game-card">
+                    <img src="images/card4.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer id="about">
+
+            <div class="footer-container">
+
+                <div class="footer-column">
+                    <h3>About Reddy Anna</h3>
+                    <p>
+                        Reddy Anna Sports Entertainment is a modern platform
+                        focused on sports and digital entertainment.
+                    </p>
+                </div>
+
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#games">Games</a>
+                    <a href="#sports">Sports</a>
+                    <a href="#support">Contact Us</a>
+
+                </div>
+
+
+                <div class="footer-column">
+                    <h3>Sports Categories</h3>
+
+                    <a href="#">Cricket</a>
+                    <a href="#">Football</a>
+                    <a href="#">Tennis</a>
+                    <a href="#">Horse Racing</a>
+                    <a href="#">Greyhound Racing</a>
+
+                </div>
+
+
+                <div class="footer-column" id="support">
+                    <h3>Connect With Us</h3>
+
+                    <p>Email: support@example.com</p>
+                    <p>Phone: +91 XXXXX XXXXX</p>
+
+                    <div class="social-icons">
+                        <span>𝕏</span>
+                        <span>▶</span>
+                        <span>f</span>
+                        <span>◎</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Reddy Anna Sports Entertainment. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
 
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <!-- LOGO -->
-
-            <div class="footer-column footer-brand">
-
-                <div class="footer-logo">
-                    REDDY
-                    <small>ANNA</small>
-                </div>
-
-                <p>
-                    A modern sports and entertainment UI
-                    designed for a simple and responsive
-                    browsing experience.
-                </p>
-
-            </div>
+</div>
 
 
-            <!-- QUICK LINKS -->
-
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <a href="#">Home</a>
-                <a href="#">Sports</a>
-                <a href="#">Cricket</a>
-                <a href="#">Football</a>
-                <a href="#">Tennis</a>
-
-            </div>
+<!-- FLOATING CONTACT BUTTON -->
+<button class="floating-btn" onclick="contactUs()">
+    💬 Contact Us
+</button>
 
 
-            <!-- INFORMATION -->
-
-            <div class="footer-column">
-
-                <h3>Information</h3>
-
-                <a href="#about">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-
-            </div>
-
-
-            <!-- CONTACT -->
-
-            <div class="footer-column">
-
-                <h3>Contact</h3>
-
-                <p>📧 support@example.com</p>
-                <p>📞 +91 XXXXX XXXXX</p>
-
-                <div class="social-icons">
-
-                    <span>f</span>
-                    <span>𝕏</span>
-                    <span>◎</span>
-                    <span>▶</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- FOOTER BOTTOM -->
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Sports & Entertainment Demo.
-                All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- ================= MESSAGE ================= -->
-
-    <div id="message" class="message">
-        Demo interface only
-    </div>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
