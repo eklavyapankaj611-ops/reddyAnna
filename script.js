@@ -1,60 +1,71 @@
-// ================= SIDE MENU =================
+// Smooth scrolling
 
-function toggleMenu() {
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
 
-    const menu = document.getElementById("sideMenu");
+    link.addEventListener('click', function(e) {
 
-    menu.classList.toggle("active");
+        const targetId = this.getAttribute('href');
 
-}
+        if (targetId && targetId !== "#") {
+
+            const target = document.querySelector(targetId);
+
+            if (target) {
+
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+            }
+
+        }
+
+    });
+
+});
 
 
-// ================= CLOSE MENU =================
+// Header Button
 
-function closeMenu() {
+function showMessage() {
 
-    const menu = document.getElementById("sideMenu");
-
-    menu.classList.remove("active");
-
-}
-
-
-// ================= DEMO MESSAGE =================
-
-function showMessage(text) {
-
-    const message = document.getElementById("message");
-
-    message.innerText = text;
-
-    message.classList.add("show");
-
-    setTimeout(function () {
-
-        message.classList.remove("show");
-
-    }, 2000);
+    alert("Welcome to Reddy Anna Sports Entertainment!");
 
 }
 
 
-// ================= CLICK OUTSIDE MENU =================
+// Hero Explore Button
 
-document.addEventListener("click", function(event) {
+function exploreGames() {
 
-    const menu = document.getElementById("sideMenu");
+    document.querySelector('#games').scrollIntoView({
+        behavior: 'smooth'
+    });
 
-    const menuButton = document.querySelector(".menu");
+}
 
-    if (
-        menu.classList.contains("active") &&
-        !menu.contains(event.target) &&
-        !menuButton.contains(event.target)
-    ) {
 
-        menu.classList.remove("active");
+// Floating Contact Button
 
-    }
+function contactUs() {
+
+    alert("For demo purposes, please use the contact information in the footer.");
+
+}
+
+
+// Game Card Click Effect
+
+document.querySelectorAll('.top-game-card').forEach(function(card) {
+
+    card.addEventListener('click', function() {
+
+        const name = this.querySelector('.game-name').innerText;
+
+        alert("You selected: " + name);
+
+    });
 
 });
