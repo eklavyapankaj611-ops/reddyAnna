@@ -47,11 +47,14 @@ function exploreGames() {
 }
 
 
-// Floating Contact Button
+// Floating Contact Button - WhatsApp
 
 function contactUs() {
 
-    alert("For demo purposes, please use the contact information in the footer.");
+    window.open(
+        "https://wa.me/917509970907",
+        "_blank"
+    );
 
 }
 
